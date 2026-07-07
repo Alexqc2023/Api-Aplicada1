@@ -12,7 +12,9 @@ function App() {
 
   const [exito, setExito] = useState('');
 
- 
+ /**
+  * 
+  */
   const [busquedaId, setBusquedaId] = useState('');
 
   const [pokemonBuscado, setPokemonBuscado] = useState(null);
@@ -121,7 +123,7 @@ function App() {
         return p;
       });
       setPokemones(listaActualizada);
-      setExito('¡Pokémon actualizado correctamente!');
+      setExito('¡Pokemon actualizado correctamente!');
     } else {
       
       const nuevoId = Math.floor(Math.random() * 1000) + 1000; 
@@ -134,7 +136,7 @@ function App() {
       };
       
       setPokemones([nuevoPokemon, ...pokemones]); 
-      setExito(`¡Nuevo Pokémon creado con el ID: ${nuevoId}!`);
+      setExito(`¡Nuevo Pokemon creado con el ID: ${nuevoId}!`);
       setFormData({ id: '', name: '', height: '', weight: '' }); 
     }
   };
@@ -217,7 +219,7 @@ function App() {
           </div>
         )}
 
-        {/* VISTA 2: BUSCADOR (GET BY ID) */}
+        
         {vistaActual === 'buscar' && (
           <div className="card shadow border-danger" style={{ maxWidth: '600px', margin: '0 auto' }}>
             <div className="card-header bg-danger text-white">
