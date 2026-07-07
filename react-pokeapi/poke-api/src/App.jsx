@@ -15,6 +15,9 @@ function App() {
  /**
   * 
   */
+ /**
+  * 
+  */
   const [busquedaId, setBusquedaId] = useState('');
 
   const [pokemonBuscado, setPokemonBuscado] = useState(null);
